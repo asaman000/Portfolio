@@ -618,3 +618,13 @@ textarea.form-input {
         gap: 15px;
     }
 }
+
+/* Accessibility Focus Styles */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--accent-purple);
+    outline-offset: 2px;
+}

@@ -1,0 +1,3 @@
+## 2026-06-16 - [Keyboard Accessibility with Custom Cursors]
+**Learning:** This app uses a custom GSAP mouse cursor that replaces the default system cursor and tracks mouse position. However, it completely ignores keyboard navigation. Keyboard users navigating via the Tab key get no visual feedback because the custom cursor doesn't follow focus, and default focus outlines were disabled or insufficient.
+**Action:** Always ensure that when implementing custom mouse cursors, `:focus-visible` styles are explicitly maintained or enhanced for all interactive elements so keyboard users can still navigate effectively.
