@@ -287,7 +287,7 @@
         <div class="modal-card glass-container">
             <div class="modal-header">
                 <h3 class="modal-title" id="modal-exp-title">Add Timeline Event</h3>
-                <button class="modal-close" onclick="closeModal('modal-experience')">&times;</button>
+                <button class="modal-close" onclick="closeModal('modal-experience')" aria-label="Close modal">&times;</button>
             </div>
             <form id="form-experience">
                 <input type="hidden" id="exp-id">
@@ -330,7 +330,7 @@
         <div class="modal-card glass-container">
             <div class="modal-header">
                 <h3 class="modal-title" id="modal-skill-title">Add Skill Entry</h3>
-                <button class="modal-close" onclick="closeModal('modal-skill')">&times;</button>
+                <button class="modal-close" onclick="closeModal('modal-skill')" aria-label="Close modal">&times;</button>
             </div>
             <form id="form-skill">
                 <input type="hidden" id="skill-id-ref">
@@ -339,7 +339,7 @@
                     <input type="text" id="skill-name" class="form-input" placeholder="e.g. Cinema 4D" required>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Proficiency Level</label>
+                    <label class="form-label" for="skill-value">Proficiency Level</label>
                     <div class="range-container">
                         <input type="range" id="skill-value" class="form-input" min="0" max="100"
                             style="padding:0; height:8px;" oninput="updateRangeValLabel(this.value)">
@@ -370,7 +370,7 @@
         <div class="modal-card glass-container">
             <div class="modal-header">
                 <h3 class="modal-title" id="modal-web-title">Add Web Project</h3>
-                <button class="modal-close" onclick="closeModal('modal-web-project')">&times;</button>
+                <button class="modal-close" onclick="closeModal('modal-web-project')" aria-label="Close modal">&times;</button>
             </div>
             <form id="form-web-project">
                 <input type="hidden" id="web-id">
@@ -416,7 +416,7 @@
         <div class="modal-card glass-container">
             <div class="modal-header">
                 <h3 class="modal-title" id="modal-video-title">Add Video Entry</h3>
-                <button class="modal-close" onclick="closeModal('modal-video-project')">&times;</button>
+                <button class="modal-close" onclick="closeModal('modal-video-project')" aria-label="Close modal">&times;</button>
             </div>
             <form id="form-video-project">
                 <input type="hidden" id="video-id">
