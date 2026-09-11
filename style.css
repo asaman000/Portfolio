@@ -1232,6 +1232,16 @@ body:not(.light-theme) .toolkit-row {
     box-shadow: 0 0 10px var(--border-glass-hover);
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--accent-glow-blue);
+}
+
 textarea.form-input {
     resize: none;
     min-height: 120px;
