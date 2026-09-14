@@ -1,0 +1,3 @@
+## 2026-03-05 - Add ARIA Labels to Icon-only &times; Close Buttons
+**Learning:** Icon-only close buttons utilizing the HTML entity `&times;` (often visually representing an "X") are read out by screen readers unhelpfully as "multiplication sign" or similar literal text.
+**Action:** Always include an explicit `aria-label="Close modal"` or similar descriptive attribute on icon-only close buttons to provide essential context for screen reader users.
