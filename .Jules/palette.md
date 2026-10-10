@@ -1,0 +1,3 @@
+## 2026-10-10 - Missing ARIA Labels on Custom Modal Close Buttons
+**Learning:** The custom modal components in this application (both in index.html and admin.html) consistently use icon-only close buttons (containing the `&times;` character) without any accessible name or ARIA label, making them inaccessible to screen readers.
+**Action:** When working with custom modal implementations or icon-only buttons in this codebase, explicitly verify and add `aria-label` attributes to ensure keyboard and screen reader accessibility. Also globally enforce `:focus-visible` for links and buttons to support clear keyboard navigation.
