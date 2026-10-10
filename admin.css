@@ -618,3 +618,16 @@ textarea.form-input {
         gap: 15px;
     }
 }
+
+/* Accessibility: Focus visible states for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.modal-close:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+
+}
