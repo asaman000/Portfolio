@@ -1640,3 +1640,18 @@ footer {
         font-size: 8px;
     }
 }
+
+/* Accessibility: Focus visible states for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.dock-link:focus-visible,
+.theme-toggle-btn:focus-visible,
+.btn-primary-framer:focus-visible,
+.btn-contact-pill:focus-visible,
+.social-card-btn:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+
+}
