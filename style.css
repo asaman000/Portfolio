@@ -1640,3 +1640,9 @@ footer {
         font-size: 8px;
     }
 }
+
+/* Accessibility enhancements */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
