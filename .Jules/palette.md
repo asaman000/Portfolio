@@ -1,0 +1,3 @@
+## 2024-10-19 - Adding Descriptive ARIA Labels to Icon-Only Close Buttons
+**Learning:** Icon-only close buttons often use HTML entities like `&times;` (multiplication sign). Without an explicit `aria-label`, screen readers may announce these characters literally (e.g., "multiplication sign"), which is confusing for visually impaired users looking for a way to dismiss a dialog.
+**Action:** Always provide a descriptive `aria-label` (such as "Close dialog") to icon-only buttons, especially those using symbols like `&times;`, to ensure clear communication of the button's function to assistive technologies.
