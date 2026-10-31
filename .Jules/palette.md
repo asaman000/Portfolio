@@ -1,0 +1,3 @@
+## 2024-05-19 - Keyboard Accessibility for Interactive Divs
+**Learning:** This app relies on interactive `div` elements (like project thumbnails and video cards) heavily utilizing `onclick` event listeners, completely overlooking keyboard accessibility and screen readers. Users without a mouse are unable to trigger these actions (like opening modals).
+**Action:** Whenever introducing or fixing `onclick` actions on non-semantic tags (like `div` or `span`), I must pair them with `role="button"`, `tabindex="0"`, and `onkeydown` listeners (specifically handling the `Enter` and `Space` keys) to ensure equal navigation paths for all users.
