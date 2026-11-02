@@ -1,0 +1,3 @@
+## 2024-10-24 - Accessibility for interactive div triggers
+**Learning:** Interactive `div` elements used as triggers (such as video thumbnails and mock tablet screens using `onclick`) are not accessible by default to keyboard and screen reader users. They need a `role="button"` for semantics, `tabindex="0"` to be focusable in the tab sequence, and keyboard event handlers (for 'Enter' or Space) to ensure they can be activated via keyboard.
+**Action:** When adding interactive `div` elements, always include `role="button"`, `tabindex="0"`, and `onkeydown` handlers, checking for Enter and Space keys. Ensure proper `focus-visible` styling is applied for clear focus indication.
