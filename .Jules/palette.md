@@ -1,0 +1,3 @@
+## 2025-01-20 - Non-Button Interactive Elements Require Explicit Accessibility Properties
+**Learning:** Many interactive elements in this vanilla project (like project thumbnails and video cards) use `onclick` handlers on `div` elements instead of semantic `<button>` tags. This pattern completely breaks keyboard navigation and screen reader support, as native semantic meaning and focus states are lost.
+**Action:** When working on interactive features or fixing bugs in this project, explicitly look for non-button interactive elements and add `role="button"`, `tabindex="0"`, `aria-label`, and `onkeydown` listeners (for Enter and Space keys) to restore standard button behavior and keyboard accessibility.
