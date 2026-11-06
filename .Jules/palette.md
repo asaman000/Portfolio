@@ -1,0 +1,3 @@
+## 2026-11-06 - Keyboard accessibility for interactive divs
+**Learning:** In vanilla HTML/JS projects, using `div` elements with `onclick` handlers for interactive elements (like video thumbnails) creates severe accessibility issues as they are entirely inaccessible via keyboard. A common pattern observed here is the lack of `role="button"`, `tabindex="0"`, and keydown event handlers.
+**Action:** When creating or modifying custom interactive elements (e.g., clickable cards, custom buttons), always add `role="button"`, `tabindex="0"`, and an `onkeydown` listener to map 'Enter' and 'Space' keys to the click action. Furthermore, ensure these elements have a clear `:focus-visible` style so users relying on keyboard navigation can see where they are.
