@@ -1,0 +1,3 @@
+## 2024-06-16 - Interactive `div` elements lacking keyboard support
+**Learning:** Found multiple instances where interactive `div` elements acting as buttons or links were missing `tabindex` and `onkeydown` handlers, making them inaccessible to keyboard and screen reader users. Simply adding `onclick` is not sufficient for interactive elements without a semantic button or link tag.
+**Action:** Added `role="button"`, `tabindex="0"`, and `onkeydown` handlers for "Enter" and "Space" key events to make the `div` components (e.g. tablet-screen and video-thumbnail-container) accessible to keyboard users. In the future, prefer semantic HTML elements (e.g. `<button>`) to minimize the need for manual focus and keyboard handlers.
